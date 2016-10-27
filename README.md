@@ -32,6 +32,7 @@ Switched to a new branch 'release'
 3. Auto checkout to specific branch
 4. Auto create branch
 5. Custom base branch
+6. Minimize wrong selected base branch
 
 ## License
 The MIT License (MIT)
