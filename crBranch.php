@@ -32,6 +32,7 @@ class crBranch
 		$newBranch = escapeshellcmd(preg_replace('/\s/', '_', trim(preg_replace('/(\W\s|\s\W)/', '', strtolower($str)))));
 		if (empty($newBranch)) exit('Empty new branch name');
 		passthru('git checkout '.$baseBranch);
+		passthru('git pull origin '.$baseBranch);
 		passthru('git checkout -b '.$newBranch);
 	}
 
