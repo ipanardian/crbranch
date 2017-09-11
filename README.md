@@ -34,5 +34,13 @@ Switched to a new branch 'release'
 5. Custom base branch
 6. Minimize wrong selected base branch
 
+## List Predefined Prefix
+- f => feature
+- e => enhance
+- b => bugfix
+- h => hotfix
+- hf => hotfeature
+- t => test
+
 ## License
 The MIT License (MIT)
