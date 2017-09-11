@@ -79,6 +79,10 @@ class crBranch
 			$prefix = 'hotfix';
 			$baseBranch = 'hotfix';
 			break;
+			
+		case '-hf':
+			$prefix = 'hotfeature';
+			break;
 
 		case '-c':
 			$baseBranch = $arg[2] ?: exit('Missing argument base branch');
