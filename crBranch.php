@@ -24,7 +24,7 @@ class crBranch
 	{
 		is_callable($callback) ?: exit();
 		$conf = $callback($this->arg) ?: exit('Empty return of callback');
-		$str = $this->readline() ?: exit();
+		$str = $this->_readline() ?: exit();
 		if (!empty($conf[1])) {
 			$str = $conf[1]. ' ' .$str;
 		}
@@ -36,7 +36,7 @@ class crBranch
 		passthru('git checkout -b '.$newBranch);
 	}
 
-	public function readline()
+	protected function _readline()
 	{
 		echo "Type: ";
 		try {
