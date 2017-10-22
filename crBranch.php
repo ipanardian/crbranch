@@ -33,7 +33,11 @@ class crBranch implements InterfaceCrBranch
 	 */
 	public function run()
 	{
-		switch ($this->arg) {
+		switch ($this->arg[1]) {
+
+			case '-l':
+				$this->showListBranch();
+			break;
 
 			default:
 				$this->createBranch(function($arg) {
@@ -78,6 +82,15 @@ class crBranch implements InterfaceCrBranch
 				});
 			break;
 		}
+	}
+
+	/**
+	 * showListBranch
+	 * @return void
+	 */
+	public function showListBranch()
+	{
+		$this->execGitCommand('branch');
 	}
 
 	/**
