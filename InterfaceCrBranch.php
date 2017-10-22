@@ -22,4 +22,6 @@ interface InterfaceCrBranch
     public function createBranch(callable $callback);
 
     public function readline();
+
+    public function showListBranch();
 }
