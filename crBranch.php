@@ -35,6 +35,10 @@ class crBranch implements InterfaceCrBranch
 	{
 		switch ($this->arg[1]) {
 
+			case '-m':
+				$this->mergeBranch($this->arg[2], $this->arg[3]);
+			break;
+
 			case '-l':
 				$this->showListBranch();
 			break;
@@ -135,6 +139,17 @@ class crBranch implements InterfaceCrBranch
 		$this->execGitCommand('checkout '.$baseBranch);
 		$this->execGitCommand('pull origin '.$baseBranch);
 		$this->execGitCommand('checkout -b '.$newBranch);
+	}
+
+	public function mergeBranch($currentBranch, $baseBranch) 
+	{
+		if (empty($currentBranch) || empty($baseBranch))
+			exit("Missing param current branch and base branch". PHP_EOL);
+
+		$this->execGitCommand("checkout $baseBranch");
+		$this->execGitCommand("pull origin $baseBranch");
+		$this->execGitCommand("checkout $currentBranch");
+		$this->execGitCommand("merge $baseBranch");
 	}
 
 	/**
