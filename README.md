@@ -25,6 +25,12 @@ Type: release
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
 Switched to a new branch 'release'
+
+//List active branchs
+$ crbranch -l 
+
+//Merge with auto pull
+$ crbrancg -m feature_abcd development 
 ```
 
 ## Feature
@@ -43,6 +49,10 @@ Switched to a new branch 'release'
 - h => hotfix
 - hf => hotfeature
 - t => test
+
+## Additional Arguments
+- l => List active branchs
+- m => Merge with auto pull
 
 ## License
 The MIT License (MIT)
