@@ -29,8 +29,8 @@ Switched to a new branch 'release'
 //List active branchs
 $ crbranch -l 
 
-//Merge with auto pull
-$ crbrancg -m feature_abcd development 
+//Merge with auto pull 
+$ crbranch -m feature_abcd development (EXPERIMENTAL!!)
 ```
 
 ## Feature
