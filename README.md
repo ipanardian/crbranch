@@ -3,6 +3,9 @@
 [![GitHub release](https://img.shields.io/github/release/ipanardian/crbranch.svg)]()
 [![GitHub license](https://img.shields.io/badge/license-MIT-red.svg)](https://raw.githubusercontent.com/ipanardian/crbranch/master/LICENSE)
 
+*this project is not under maintenance anymore. Please use GoBranch instead*
+[https://github.com/ipanardian/GoBranch](https://github.com/ipanardian/GoBranch)
+
 
 A simple command line app to help you create git branch more faster. You just copy a title from project management app like Asana or whatever you use. Paste it on command line along with specific argument then enter. The crbranch will checkout to specific base branch and create new branch for you. 
 
